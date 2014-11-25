@@ -1,0 +1,37 @@
+{
+    "name": "series/tvrage",
+    "description": "API for tvrage",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Aarhof",
+            "email": "martin.aarhof@gmail.com"
+        }
+    ],
+    "require": {
+        "series/models": "~1.0",
+        "guzzlehttp/guzzle": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Series\\TVRage\\": "src"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "guzzlehttp/retry-subscriber": "~2.0",
+        "satooshi/php-coveralls": "~0.6"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Series\\TVRageTests\\": "tests"
+        }
+    },
+    "suggest": {
+        "guzzlehttp/retry-subscriber": "Allow requests to be retried"
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
